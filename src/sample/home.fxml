@@ -65,17 +65,11 @@
                                 <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
                             </HBox.margin>
                         </Label>
-                        <SplitMenuButton fx:id="btnType" mnemonicParsing="false" text="Select Type">
-                            <items>
-                                <MenuItem fx:id="menuItemMemeory" mnemonicParsing="false" text="Memory" />
-                                <MenuItem fx:id="menuItemTotalCPU" mnemonicParsing="false" text="Total CPU" />
-                                <MenuItem fx:id="menuItemKubeCPU" mnemonicParsing="false" text="KUBE Apps CPU" />
-                                <MenuItem fx:id="menuItemSecurityCPU" mnemonicParsing="false" text="Security Apps CPU" />
-                            </items>
-                            <HBox.margin>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                            </HBox.margin>
-                        </SplitMenuButton>
+                  <ChoiceBox fx:id="choiceBox" onMouseClicked="#selectedType" prefWidth="150.0" >
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
                     </children>
                 </HBox>
                 <HBox prefHeight="36.0" prefWidth="368.0">
